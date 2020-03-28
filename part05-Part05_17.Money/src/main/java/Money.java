@@ -10,7 +10,16 @@ public class Money {
             euros = euros + cents / 100;
             cents = cents % 100;
         }
-
+        
+        if (cents < 0){
+            euros = euros -1;
+            cents = 100 + cents;
+        }
+        
+        if (euros < 0){
+            euros = 0;
+            cents = 0;
+        }
         this.euros = euros;
         this.cents = cents;
     }
@@ -35,6 +44,24 @@ public class Money {
     public Money plus(Money addition){
         Money newMoney = new Money(this.euros + addition.euros, this.cents + addition.cents); 
         
+        return newMoney;
+    }
+    
+    public boolean lessThan(Money compared){
+        if (this.euros < compared.euros) {
+            return true;
+        }
+        
+        if (this.euros == compared.euros &&
+            this.cents < compared.cents) {
+            return true;
+        }
+        
+        return false;
+    }
+    
+    public Money minus(Money decreaser){
+        Money newMoney = new Money((this.euros - decreaser.euros), (this.cents - decreaser.cents));
         return newMoney;
     }
 }
