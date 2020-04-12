@@ -1,2 +1,2 @@
-# Java Programming Course Part 1
-A repo that holds solutions for the Java programming course created by University of Helsinki
+# Java Programming Course
+A repo that holds solutions for the Java programming course (Part 1 & 2) created by University of Helsinki.
