@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class Player {
+public class Player {
+    private String name;
+    public void play(){}
+    public void printName(){}
 }

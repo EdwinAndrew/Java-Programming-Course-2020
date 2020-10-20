@@ -1,2 +1,3 @@
-package PACKAGE_NAME;public class D {
+public class D {
+    private IA a;
 }

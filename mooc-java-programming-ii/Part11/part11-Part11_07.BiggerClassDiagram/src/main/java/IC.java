@@ -1,2 +1,2 @@
-package PACKAGE_NAME;public interface IC {
+public interface IC {
 }

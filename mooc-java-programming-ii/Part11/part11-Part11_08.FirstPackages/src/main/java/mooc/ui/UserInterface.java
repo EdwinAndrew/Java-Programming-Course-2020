@@ -1,2 +1,5 @@
-package mooc.ui;public interface UserInterface {
+package mooc.ui;
+
+public interface UserInterface {
+    public void update();
 }

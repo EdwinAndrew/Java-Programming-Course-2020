@@ -1,2 +1,6 @@
-package PACKAGE_NAME;public class Plane {
+public class Plane {
+    private String ID;
+    private String model;
+    private int yearOfIntroduction;
 }
+

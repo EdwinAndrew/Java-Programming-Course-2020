@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public class Show {
+public class Show {
+    private String time;
+    private String movie;
 }
